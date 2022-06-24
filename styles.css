@@ -1,0 +1,52 @@
+.container {
+  width: 60%;
+  border-radius: 6px;
+  -webkit-box-shadow: 4px -4px 15px 0px #ff1f1f, 12px -11px 7px 0px #ff9376,
+    20px -5px 7px 0px #ffe264, 20px 6px 7px 0px #f6ff33,
+    13px 12px 17px 0px #ff9527, 2px 17px 17px 0px #ff0000,
+    -9px 21px 18px 0px #fff212, -9px 6px 11px 0px #ff0808,
+    -11px -9px 11px 0px #fffa17, -11px -9px 11px 0px #fffa17,
+    -1px 15px 23px 8px rgba(0, 0, 0, 0);
+  box-shadow: 4px -4px 15px 0px #ff1f1f, 12px -11px 7px 0px #ff9376,
+    20px -5px 7px 0px #ffe264, 20px 6px 7px 0px #f6ff33,
+    13px 12px 17px 0px #ff9527, 2px 17px 17px 0px #ff0000,
+    -9px 21px 18px 0px #fff212, -9px 6px 11px 0px #ff0808,
+    -11px -9px 11px 0px #fffa17, -11px -9px 11px 0px #fffa17,
+    -1px 15px 23px 8px rgba(0, 0, 0, 0);
+  margin-top: 70px;
+}
+input,
+button {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border-width: 2px;
+  border-radius: 3px;
+}
+h1 {
+  color: #4eae53;
+  text-align: center;
+}
+.sut {
+  text-align: center;
+  margin-top: 10px;
+  color: #ff7f13;
+}
+.row {
+  margin-top: 30px;
+}
+
+.row row-cols-5 {
+  margin: 10px;
+  color: gray;
+}
+.col-sm {
+  text-align: center;
+}
+.col {
+  text-align: center;
+  padding: 5px;
+}
+.p-3 border bg-light {
+  border-radius: 10px;
+}
