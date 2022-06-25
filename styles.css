@@ -54,8 +54,8 @@ h1 {
 footer {
   position: absolute;
   padding: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 30%;
+  margin-right: 30%;
   top: 90%;
-     
+  text-align: center;
 }
