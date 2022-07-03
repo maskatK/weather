@@ -11,32 +11,67 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="scr/styles.css" />
   </head>
 
   <body>
+    <div class="cont_weather_and_search"></div>
     <div class="container">
-      <br />
-      <form>
-        <input type="text" id="search" placeholder="🔍 Search" />
-        <input type="submit" id="send" value="Send" />
-      </form>
-      <div class="sut">
-        <button>Temperature in your city</button>
+      <div class="row" id="date">
+        <div class="col-auto">
+          <span id="day_hour_min">
+            Friday 05:00
+          </span>
+        </div>
       </div>
       <div class="row">
-        <div class="col"><h1>Kiev</h1></div>
-        <div class="col"><h2>+24</h2></div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="serch_city" placeholder="Type of city" autocomplete="off" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+        </div>                         
       </div>
-      <p></p>
-      <p></p>
-      <p></p>
+      <div class="row">
+         <div class="col" id="your_city">Your city</div>
+         <div class="col-auto" id="show_yor_city"><h1></h1></div>
+      </div>
+       <div class="row">
+        <div class="col-4">
+          <div class="img-weather">
+            <img src="http://openweathermap.org/img/wn/02d@2x.png" id="icon" alt=""></a>
+          </div>
+        </div>
+          <div class="col-4" id="temperature">
+            <lu>
+              <li>Temperatura:</li>
+              <li>
+                <span class="temperature-c-f">
+                  <strong>24°</strong>
+                </span>
+                <span class="units">
+                  <a href="#" id="celcius-link" class="active">C</a> |
+                  <a href="#" id="farengeit-link">F</a>
+                </span>
+              </li>
+              </lu>
+          </div>
+          <div class="col-4">
+            <lu>
+              <li>
+                Humidity: <span id="humidity"></span>%
+              </li>
+              <li>
+                Wind: <span id="wind"></span> km/h
+              </li>
+              <li id="discription"></li>
+              </lu>
+          </div>
+      </div>
       <div class="row row-cols-5 gx-3">
-        <div class="col">Sunday</div>
-        <div class="col">Monday</div>
-        <div class="col">Tuesday</div>
-        <div class="col">Wednesday</div>
-        <div class="col">Thursday</div>
+        <div class="col">Sun</div>
+        <div class="col">Mon</div>
+        <div class="col">Tue</div>
+        <div class="col">Wed</div>
+        <div class="col">Thu</div>
       </div>
       <div class="row row-cols-5">
         <div class="col">
@@ -76,11 +111,12 @@
         </div>
       </div>
     </div>
+    </div>
     <footer>
       <p>
       My GitHub repository <a href="https://github.com/maskatK/weather.git"> https://github.com/maskatK/weather.git </a>
       </p>
     </footer>
-    <script src="index.js"></script>
+    <script src="scr/index.js"></script>
   </body>
 </html>

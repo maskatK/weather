@@ -1,3 +1,9 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: 16px;
+  font-weight: 100;
+}
 .container {
   width: 60vw;
   border-radius: 6px;
@@ -15,30 +21,46 @@
     -1px 15px 23px 8px rgba(0, 0, 0, 0);
   margin-top: 70px;
 }
-input,
-button {
-  display: block;
-  width: 40vw;
-  padding: 2px;
-  margin: 0 auto;
-  border-width: 2px;
-  border-radius: 3px;
+.row {
+  padding: 5px 10px;
+  margin: 0 5px;
+  }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  color: gray;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+li:first-letter {
+text-transform: capitalize;
 }
 h1 {
+  font-size: 22px;
   text-align: center;
   color: #4eae53;
 }
 .sut {
   text-align: center;
-  margin-top: 10px;
   color: #ff7f13;
 }
-.row {
-  margin-top: 30px;
+.row.row-cols-2 {
+  padding: 10px;
 }
-
-.row row-cols-5 {
-  margin: 10px;
+.row.offset-md-7 {
+  margin-top: 5px;
+}
+#search {
+  border-radius: 6px;
+  
+}
+.row-cols-5 {
+  margin: 5px 10px;
   color: gray;
 }
 .col-sm {
@@ -48,7 +70,7 @@ h1 {
   text-align: center;
   padding: 5px;
 }
-.p-3 border bg-light {
+.bg-light {
   border-radius: 10px;
 }
 footer {
@@ -56,6 +78,44 @@ footer {
   padding: 20px;
   margin-left: 30%;
   margin-right: 30%;
-  top: 90%;
+  top: 80%;
   text-align: center;
+}
+#date {
+  padding-top: 10px;
+}
+#your_city {
+  text-align: left;
+  margin: 0 7px;
+}
+#show_yor_city {
+  text-align: right;
+  margin: 0 7px;
+}
+#temperature {
+  display: table-cell;
+}
+.img-weather img {
+    height: 100px;
+    width: 100px;
+}
+.temperature-c-f strong {
+  color: rgb(33, 33, 33);
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 1;
+  position: relative;
+  top: 5px;
+}
+span.units {
+  position: relative;
+  bottom: 25px;
+}
+.units .active {
+  color: gray;
+  text-decoration: none;
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
 }
