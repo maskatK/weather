@@ -6,6 +6,7 @@ body {
 }
 .container {
   width: 60vw;
+  min-height: 70vh;
   border-radius: 6px;
   -webkit-box-shadow: 4px -4px 15px 0px #ff1f1f, 12px -11px 7px 0px #ff9376,
     20px -5px 7px 0px #ffe264, 20px 6px 7px 0px #f6ff33,
@@ -70,15 +71,13 @@ h1 {
   text-align: center;
   padding: 5px;
 }
-.bg-light {
+.bg-white{
   border-radius: 10px;
 }
 footer {
   position: absolute;
-  padding: 20px;
-  margin-left: 30%;
-  margin-right: 30%;
-  top: 80%;
+  width: 100vw;
+  top: 88%;
   text-align: center;
 }
 #date {
@@ -114,8 +113,8 @@ span.units {
 .units .active {
   color: gray;
   text-decoration: none;
-  cursor: default;
+  cursor: #fff;
 }
-.units .active:hover {
-  text-decoration: none;
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Weather</title>
+    <title>Weather forecast</title>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,8 +19,9 @@
     <div class="container">
       <div class="row" id="date">
         <div class="col-auto">
+          Last update: 
           <span id="day_hour_min">
-            Friday 05:00
+            
           </span>
         </div>
       </div>
@@ -42,10 +43,10 @@
         </div>
           <div class="col-4" id="temperature">
             <lu>
-              <li>Temperatura:</li>
+              <li>Temperature:</li>
               <li>
                 <span class="temperature-c-f">
-                  <strong>24°</strong>
+                  <strong></strong>
                 </span>
                 <span class="units">
                   <a href="#" id="celcius-link" class="active">C</a> |
@@ -66,51 +67,13 @@
               </lu>
           </div>
       </div>
-      <div class="row row-cols-5 gx-3">
-        <div class="col">Sun</div>
-        <div class="col">Mon</div>
-        <div class="col">Tue</div>
-        <div class="col">Wed</div>
-        <div class="col">Thu</div>
-      </div>
-      <div class="row row-cols-5">
-        <div class="col">
-          <div class="p-3 border bg-light">
-            ⛅
-            <br />
-            +12
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3 border bg-light">
-            ☁
-            <br />
-            +12
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3 border bg-light">
-            ⛈
-            <br />
-            +12
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3 border bg-light">
-            🌦
-            <br />
-            +12
-          </div>
-        </div>
-        <div class="col">
-          <div class="p-3 border bg-light">
-            ☀
-            <br />
-            +12
-          </div>
-        </div>
-      </div>
+    <div class = "days" id="days-week">
     </div>
+      
+     <div class = "temp-week" id="temp-week">
+    </div>
+
+    </div> 
     </div>
     <footer>
       <p>
