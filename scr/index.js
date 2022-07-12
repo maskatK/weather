@@ -13,7 +13,7 @@
   formatData.innerHTML = `${day} ${hours}:${minutes}`;
   let apiKey="d14a5f9f0440a82a056dfd79e5c778de";
   
-   function yourPositionAuto () {
+   
     
     function formatDay(timestemp) {
      let date = new Date(timestemp * 1000);
@@ -92,7 +92,6 @@ function changeApiUrl(coordinates) {
     iconElement.setAttribute("alt", response.data.weather[0].description);
     
     
-
     function showFarengeit(event) {
       event.preventDefault();
       let temperatureElement = document.querySelector("strong");
@@ -117,35 +116,37 @@ function changeApiUrl(coordinates) {
     let celciusLink = document.querySelector("#celcius-link");
     celciusLink.addEventListener("click", showCelcius);
 
-    getCityCoord(response.data.coord);
+   getCityCoord(response.data.coord);
     }
     
-  function yourPosition(position) {
-    let lat = position.coords.latitude;
-    let lon = position.coords.longitude;
-    let urlPositionAuto =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&limit=1&appid=${apiKey}&units=metric`;
-  
-  axios.get(urlPositionAuto).then(elements);
-         
-  function cityUp(event) {
-    event.preventDefault();
-      let cityName = document.querySelector("#serch_city");
-      let h1 = document.querySelector("h1");
-      h1.innerHTML = `${cityName.value}`;
-      city = `${cityName.value}`;
-      let urlPositionManually = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-              
-    axios.get(urlPositionManually).then(elements);
-         
-    }
-    let send = document.querySelector("#button-addon2");
-    send.addEventListener("click", cityUp);
-    
-  }
-  navigator.geolocation.getCurrentPosition(yourPosition);
-  
-}
+
 let celciusTemperature = null;
+
+function cityUp(event) {
+  event.preventDefault();
+    let cityName = document.querySelector("#serch_city");
+    let h1 = document.querySelector("h1");
+    h1.innerHTML = `${cityName.value}`;
+    city = `${cityName.value}`;
+    let urlPositionManually = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+            
+  axios.get(urlPositionManually).then(elements);
+       
+  }
+  let send = document.querySelector("#button-addon2");
+  send.addEventListener("click", cityUp);
+
+  function yourPositionAuto () {
+    function yourPosition(position) {
+      let lat = position.coords.latitude;
+      let lon = position.coords.longitude;
+      let urlPositionAuto =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&limit=1&appid=${apiKey}&units=metric`;
+    
+    axios.get(urlPositionAuto).then(elements);
+    }
+    navigator.geolocation.getCurrentPosition(yourPosition);
+  }
+
 window.addEventListener("load", yourPositionAuto);
 
 
